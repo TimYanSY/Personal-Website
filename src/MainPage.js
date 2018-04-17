@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import Content from './Content';
 import Footer from './Footer';
+import './MainPage.css'
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -49,7 +50,7 @@ class MainPage extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="mainPage">
                 <NavBar
                 setContentHome={this.setContentHome}
                 setContentAbout={this.setContentAbout}
@@ -57,7 +58,6 @@ class MainPage extends React.Component {
                 setContentProfile={this.setContentProfile}
                 />
                 <Content ctnt={this.state.content}/>
-                {this.state.footerVisible && <Footer/>}
             </div>
         );
     }

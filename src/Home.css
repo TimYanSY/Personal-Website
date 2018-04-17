@@ -1,0 +1,19 @@
+.introFirst {
+    padding-top: 40%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.introSecond {
+    text-align: center;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 40%;
+}
+
+.entireHome {
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
