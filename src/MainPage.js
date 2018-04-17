@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Content from './Content'
+import Footer from './Footer'
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -51,6 +52,7 @@ class MainPage extends React.Component {
                 setContentProfile={this.setContentProfile}
                 />
                 <Content ctnt={this.state.content}/>
+                <Footer/>
             </div>
         );
     }
