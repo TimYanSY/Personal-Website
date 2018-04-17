@@ -2,6 +2,7 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+    padding: 0px;
 }
 
 /* Style the links inside the navigation bar */
@@ -9,7 +10,11 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -23,4 +28,20 @@
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
+}
+
+.nav-link-image {
+  flex: 1;
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-link {
+  margin: 0px;
+  padding: 0px;
 }
