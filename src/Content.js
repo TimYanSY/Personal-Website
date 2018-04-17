@@ -1,9 +1,6 @@
 import React from 'react'
 
 class Content extends React.Component {
-  constructor(props) {
-    super(props);
-  }
     getContent() {
       const content = this.props.ctnt;
       console.log(content);
@@ -13,8 +10,8 @@ class Content extends React.Component {
       if (content === 'Profile') {
         return 'Profile';
       }
-      if (content === 'Profile') {
-        return 'Profile';
+      if (content === 'Resume') {
+        return 'Resume';
       }
       return "Home";
     }

@@ -2,9 +2,6 @@ import React from 'react'
 import './NavBar.css'
 
 class NavBar extends React.Component{
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
 
@@ -28,7 +25,7 @@ class NavBar extends React.Component{
           <img
             className="nav-link-image"
             src={require("./assets/linkedin.jpg")}
-            alt = ""/>
+            alt = "L"/>
         </a>
         <a
         href="https://github.com/TimYanSY"
@@ -36,7 +33,7 @@ class NavBar extends React.Component{
           <img
             className="nav-link-image"
             src={require("./assets/github.png")}
-            alt = ""/>
+            alt = "Git"/>
         </a>
         </div>
         </div>
