@@ -1,12 +1,13 @@
 import React from 'react';
 import NavBar from './NavBar';
-import Content from './Content'
-import Footer from './Footer'
+import Content from './Content';
+import Footer from './Footer';
 
 class MainPage extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
+        footerVisible: true,
         content: 'Home'
       }
       this.setContentHome = this.setContentHome.bind(this);
@@ -18,6 +19,7 @@ class MainPage extends React.Component {
     setContentHome(e) {
       e.preventDefault();
       this.setState({
+        footerVisible: true,
         content: 'Home'
       });
     }
@@ -25,6 +27,7 @@ class MainPage extends React.Component {
     setContentAbout(e) {
       e.preventDefault();
       this.setState({
+        footerVisible: true,
         content: 'About'
       });
     }
@@ -32,6 +35,7 @@ class MainPage extends React.Component {
     setContentProfile(e) {
       e.preventDefault();
       this.setState({
+        footerVisible: true,
         content: 'Profile'
       })
     }
@@ -39,6 +43,7 @@ class MainPage extends React.Component {
     setContentResume(e) {
       e.preventDefault();
       this.setState({
+        footerVisible: false,
         content: 'Resume'
       })
     }
@@ -52,7 +57,7 @@ class MainPage extends React.Component {
                 setContentProfile={this.setContentProfile}
                 />
                 <Content ctnt={this.state.content}/>
-                <Footer/>
+                {this.state.footerVisible && <Footer/>}
             </div>
         );
     }
